@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Handlee&family=Merriweather:ital@1&display=swap');
 :root {
     --primary: rgb(0, 0, 0);
-    --secondary: rgb(255, 255, 255); 
-    --tertiary: rgb(190, 0, 0);
-    --light: rgb(228, 228, 228);
+    --secondary: rgb(170, 0, 0); 
+    --tertiary: rgb(0, 192, 192);
+    --light: rgb(255, 255, 255);
     --dark: rgb(0, 0, 0);
     --headerFont: 'Merriweather', serif;
     --bodyFont: 'Handlee', cursive;
@@ -16,11 +16,11 @@ body {
     color: var(--black);
     background-color: var(--light);
     font-family: var(--bodyFont);
+    margin: 0;
 }
 /* Navbar Styling */
 #header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: var(--primary);
     flex-direction: column;
@@ -30,7 +30,7 @@ body {
 }
 #navHead {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100vw;
     justify-content: space-around;
     align-items: center;
@@ -40,13 +40,13 @@ body {
     font-family: var(--headerFont);
     font-size: 56px;
     font-weight: bold;
-    color: var(--tertiary);
+    color: var(--secondary);
     margin: 0 auto
 }
 #title {
     display: flex;
-    font-size: 32px;
-    color: var(--tertiary);
+    font-size: 24px;
+    color: var(--light);
     margin: 0 auto
 }
 .navlinks {
@@ -60,11 +60,10 @@ body {
 }
 .links a {
     color: var(--tertiary);
-    margin-right: 20px;
     text-decoration: none;    
 }
 .links a:hover {
-    color: var(--secondary);
+    color: var(--light);
 }
 /* About Me Styling */
 #aboutMe {
@@ -143,4 +142,13 @@ p {
     margin-right: 20px;
     text-decoration: none; 
     justify-content: space-evenly;
+}
+@media (max-width: 955px) {
+    #aboutMe {
+        flex-direction: column;
+        justify-content: center;
+    }
+    #profileImg {
+        width: 500px;    
+    }
 }
