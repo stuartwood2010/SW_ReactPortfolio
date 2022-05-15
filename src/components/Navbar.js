@@ -4,18 +4,14 @@ import React from 'react';
 export const Navbar = () => {
     return (
 
-        <div id="header">
-            <div id="navHead">
+        <div id="header">            
+                <p id="title">Full Stack Web Developer</p>     
                 <h1 id="name">Stuart Wood</h1>
-                <p id="title">Full Stack Web Developer</p>        
-            </div>     
-            <nav>
                 <ul class="navlinks">
-                <li class="links"><a href='/'>About Me</a></li>
-                <li class="links"><a href='/mywork'>My Work</a></li>
-                <li class="links"><a href='/contact'>Contact Me</a></li>                 
-                </ul>
-            </nav>          
+                    <li class="navlink"><a href='/'>About Me</a></li>
+                    <li class="navlink"><a href='/mywork'>My Work</a></li>
+                    <li class="navlink"><a href='/contact'>Contact Me</a></li>                 
+                </ul>         
         </div>
     )
 }
