@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&family=Teko:wght@600&display=swap');
 :root {
     --primary: rgb(0, 0, 0);
-    --secondary: rgb(251, 255, 0); 
-    --light: rgb(255, 255, 255);
-    --dark: rgb(0, 0, 0);
+    --secondary: rgb(0, 247, 255); 
+    --light: rgb(219, 219, 219);
     --headerFont: 'Teko', sans-serif;
     --bodyFont: 'Play', sans-serif;
 }
@@ -34,6 +33,7 @@ body {
     font-size: 72px;
     font-weight: bold;
     color: var(--secondary);
+    margin: 10px,
 }
 #title {
     text-align: center;
@@ -47,7 +47,6 @@ body {
     flex-direction: row;
     list-style-type: none;
     font-size: 24px;
-    margin-right: 10px;
     padding: 0;
 }
 .navlink a {
@@ -71,7 +70,7 @@ body {
 #bio {
     display: flex;
     flex-direction: column;
-    font-size: 32px;
+    font-size: 22px;
     margin: 10px;
     padding: 10px;
     align-items: center;
@@ -112,9 +111,9 @@ p {
     margin: 20px;
 }
 .myWork {
-    border: 1px solid var(--primary);
+    border: 1px solid var(--secondary);
     border-radius: 25px;
-    background-color: var(--dark);
+    background-color: var(--primary);
     flex-direction: column;
     text-align: center;
     margin: 20px;  
@@ -152,7 +151,14 @@ p {
 .appLink:hover {
     color: var(--secondary)
 }
-@media (max-width: 955px) {
+@media (max-width: 1000px) {
+    #header {
+        height: 100%;
+        flex-direction: column;
+    }
+    #name {
+        margin: 0 auto;
+    }
     #aboutMe {
         flex-direction: column;
         justify-content: center;
