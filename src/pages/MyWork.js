@@ -15,7 +15,7 @@ function MyWork() {
                 <h4 class="title">Dinner Party</h4>     
                 <img class="work-img" src="https://i.ibb.co/yS9PjSm/Dinner-Party-App-Img.png" alt="Screenshot of Dinner Party"/>
                 <div class="links">
-                    <a class="appLink" target="blank" href="https://agmorrow.github.io/Project1_DinnerParty/">Deployed App</a>
+                    <a class="appLink" target="blank" href="https://agmorrow.github.io/DinnerParty-App/">Deployed App</a>
                     <a class="appLink" target="blank" href="https://github.com/agmorrow/Project1_DinnerParty">GitHub Repo</a>
                 </div>    
             </div>
